@@ -3,22 +3,7 @@
 <body>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
- <canvas id="myCanvas" width="900" height="600" style="border:1px solid #000000;">
-</canvas> 
-
-<script>
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-var xMin = 200;
-var xMax = 600;
-var mod = 1;
-
-for (var i = xMin; i <= xMax; i += 2) {
-	ctx.moveTo(i, (mod*(i-xMin)*(i-xMax)));
-	ctx.lineTo(i+1, (mod*(i+1-xMin)*(i+1-xMax)));
-}
-ctx.stroke();
-</script> 
-
+<canvas id="canvas" width="900" height="600" style="border:1px solid #000000;"></canvas> 
+<script src="game.js" type="module"></script>
 </body>
 </html>
